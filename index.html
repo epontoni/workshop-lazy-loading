@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web site created using create-snowpack-app"
+    />
+    <!--
+      Snowpack will replace / with the value you have for `baseUrl` in `snowpack.config.js`.
+      Make sure to update it with your GitHub Page URL. https://<your-username>.github.io/<your-repo-name>
+
+      More about config options:
+      - https://www.snowpack.dev/reference/configuration#buildoptions.baseurl
+    -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/_dist_/index.css"
+    />
+    <title>Snowpack & Tailwind App</title>
+  </head>
+  <body>
+    <!--
+      This HTML file is a template.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+
+      Start modyfing from here.
+    -->
+    <div class="py-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <p
+          class="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase"
+        >
+          DOM Manipulation
+        </p>
+        <h3
+          class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
+        >
+          Lazy loading
+        </h3>
+        <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 mx-auto">
+          En este proyecto cargamos imágenes usando <strong>lazy loading</strong>.<br />
+          Las imágenes cargadas no se descargarán hasta que sean visibles en pantalla (Intersection Observer).
+        </p>
+        <p>✨</p>
+
+        <p class="text-sm text-gray-500">Agrega una nueva imagen al final de la lista</p>
+        
+        <button id="btnAddImg" class="px-3 py-1 my-2 bg-sky-500 bg-indigo-500 rounded border-solid border-2 border-indigo-600 text-white">Agregar Imagen</button>
+        <br />
+        <button id="btnLimpiar" class="text-indigo-500 font-medium">Limpiar</button>
+
+        <div id="images" class="text-center"></div>
+
+      </div>
+    </div>
+
+    <footer class="text-center mt-48 p-6 text-sm text-gray-500">
+      Powered by <a href="https://randomfox.ca/">Random Fox</a>.
+    </footer>
+
+    <!-- Add more scripts here -->
+    <script type="module" src="/_dist_/index.js"></script>
+  </body>
+</html>
